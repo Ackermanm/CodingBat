@@ -8,7 +8,7 @@ strCopies("catcowcat", "cat", 2) → true
 strCopies("catcowcat", "cow", 2) → false
 strCopies("catcowcat", "cow", 1) → true */
 
-public class StrCopies {  // complete with others hints
+public class StrCopies {  // complete with others' hints on github
     public static boolean strCopies(String str, String sub, int n) {
         if (n == 0)
             return true;
