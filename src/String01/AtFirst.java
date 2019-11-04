@@ -7,6 +7,10 @@ atFirst("hello") → "he"
 atFirst("hi") → "hi"
 atFirst("h") → "h@" */
 
+import org.junit.Test;
+
+import static junit.framework.TestCase.assertTrue;
+
 public class AtFirst {
     public String atFirst(String str) {
         if (str.equals(null) || str.length() == 0)
@@ -14,5 +18,10 @@ public class AtFirst {
         else if (str.length() == 1)
             return str + "@";
         else return str.substring(0, 2);
+    }
+
+    @Test
+    public void testAtFirst() {
+        assertTrue(atFirst("hello").equals("he"));
     }
 }
